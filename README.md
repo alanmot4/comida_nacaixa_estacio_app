@@ -1,73 +1,36 @@
-# Welcome to your Lovable project
+## Marmita Delivery App
 
-## Project info
+Aplicativo web + Android para delivery de marmitas, com cadastro, checkout, perfil e área administrativa.
 
-**URL**: https://lovable.dev/projects/2c1d6a5f-fe31-4f1f-bd54-5496d0654743
+### Stack Web
+- Vite + React + TypeScript
+- Tailwind CSS + shadcn-ui
+- Supabase (auth, storage e API)
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/2c1d6a5f-fe31-4f1f-bd54-5496d0654743) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Como rodar (web)
+Requisitos: Node.js 18+
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Variáveis de ambiente
+Crie um arquivo `.env` baseado em `.env.example` e preencha com as chaves do Supabase.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Como buildar (web)
+```sh
+npm run build
+npm run preview
+```
 
-**Use GitHub Codespaces**
+### Android (Compose)
+O app Android está em `android-app/`. Use Android Studio ou:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```sh
+cd android-app
+./gradlew assembleDebug
+```
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2c1d6a5f-fe31-4f1f-bd54-5496d0654743) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Licença
+Este projeto é de uso interno da marca/cliente. Consulte o autor para redistribuição.

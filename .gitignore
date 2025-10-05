@@ -17,6 +17,9 @@ dist-ssr
 .env.*
 !.env.example
 
+# Supabase local overrides
+supabase/.env
+
 # Android build artifacts
 android-app/.gradle/
 android-app/build/
