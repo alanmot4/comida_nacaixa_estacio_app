@@ -7,10 +7,23 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Web app artifacts (repo keeps only Android and Supabase migrations)
+node_modules/
+dist/
+dist-ssr/
 *.local
+public/
+src/
+index.html
+vite.config.ts
+tailwind.config.ts
+postcss.config.js
+eslint.config.js
+components.json
+tsconfig*.json
+bun.lockb
+package.json
+package-lock.json
 
 # Environment
 .env
@@ -19,6 +32,7 @@ dist-ssr
 
 # Supabase local overrides
 supabase/.env
+supabase/config.toml
 
 # Android build artifacts
 android-app/.gradle/

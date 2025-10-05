@@ -1,36 +1,17 @@
-## Marmita Delivery App
+## Marmita Delivery App (Android)
 
-Aplicativo web + Android para delivery de marmitas, com cadastro, checkout, perfil e área administrativa.
+Repositório enxuto contendo apenas o app Android (Jetpack Compose) e as migrations do Supabase.
 
-### Stack Web
-- Vite + React + TypeScript
-- Tailwind CSS + shadcn-ui
-- Supabase (auth, storage e API)
-
-### Como rodar (web)
-Requisitos: Node.js 18+
-
-```sh
-npm i
-npm run dev
-```
-
-### Variáveis de ambiente
-Crie um arquivo `.env` baseado em `.env.example` e preencha com as chaves do Supabase.
-
-### Como buildar (web)
-```sh
-npm run build
-npm run preview
-```
-
-### Android (Compose)
+### Android (Jetpack Compose)
 O app Android está em `android-app/`. Use Android Studio ou:
 
 ```sh
 cd android-app
 ./gradlew assembleDebug
 ```
+
+### Supabase (migrations)
+As migrações do banco estão em `supabase/migrations/`.
 
 ### Licença
 Este projeto é de uso interno da marca/cliente. Consulte o autor para redistribuição.
